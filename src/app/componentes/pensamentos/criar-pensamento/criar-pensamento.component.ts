@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class CriarPensamentoComponent {
 
+  pensamento = {
+    id: '1',
+    conteudo:'Aprendendo Angular',
+    autoria: 'Dev',
+    modelo: ''
+  }
+  constructor(){
+
+  }
+  ngOnInit(): void{
+
+  }
+
 }
