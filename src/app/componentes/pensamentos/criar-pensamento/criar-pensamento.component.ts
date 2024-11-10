@@ -1,25 +1,31 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-criar-pensamento',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],  // Adicione FormsModule aqui
   templateUrl: './criar-pensamento.component.html',
-  styleUrl: './criar-pensamento.component.css'
+  styleUrls: ['./criar-pensamento.component.css']  // Corrija para styleUrls
 })
 export class CriarPensamentoComponent {
 
   pensamento = {
     id: '1',
-    conteudo:'Aprendendo Angular',
+    conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
-    modelo: ''
-  }
-  constructor(){
+    modelo: 'modelo1'
+  };
 
-  }
-  ngOnInit(): void{
+  constructor() {}
 
+  ngOnInit(): void {}
+
+  criarPensamento() {
+    alert("novo pensamento");
   }
 
+  cancelarPensamento() {
+    alert("cancelamento");
+  }
 }
