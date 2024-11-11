@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-criar-pensamento',
   standalone: true,
-  imports: [FormsModule],  // Adicione FormsModule aqui
+  imports: [FormsModule,RouterModule], // Adicione FormsModule aqui
   templateUrl: './criar-pensamento.component.html',
   styleUrls: ['./criar-pensamento.component.css']  // Corrija para styleUrls
 })
