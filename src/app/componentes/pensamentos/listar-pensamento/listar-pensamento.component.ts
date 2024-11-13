@@ -11,4 +11,7 @@ import { PensamentoComponent } from "../pensamento/pensamento.component";
 })
 export class ListarPensamentoComponent {
 
-}
+  listaPensamentos = [];
+
+
+  }
