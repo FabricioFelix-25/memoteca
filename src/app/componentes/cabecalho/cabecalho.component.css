@@ -27,7 +27,7 @@
   }
 
   @media (max-width: 576px) {
-    .cabecalho .logo {
+    .cabecalho.logo {
       padding: 2rem;
     }
     .cabecalho p {
